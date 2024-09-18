@@ -1,0 +1,202 @@
+(footprint "Mini Fuse Socket"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Mouser N° 534-3557-2 - Keystone N° 3557-2")
+	(tags "Connector")
+	(property "Reference" "J**"
+		(at -0.597 0.218 0)
+		(layer "F.SilkS")
+		(uuid "1ba8a17c-fb21-499c-912c-0ecdd83680d6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "Mini Fuse Socket"
+		(at -0.597 0.218 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e7a67b1b-b74e-422c-8f29-0f7e1e3465bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af8823da-6278-4fc6-9ca8-2a011d33ac98")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc4beff4-82d5-4dbc-8149-46ef8dae084b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21cdac72-1734-482c-b9fc-723317979c41")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -9.905 -3.365)
+		(end -9.905 3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "08099c5e-b09e-499d-bd21-dcfa06238547")
+	)
+	(fp_line
+		(start -9.905 3.365)
+		(end 9.905 3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec40643c-ec0e-45b5-9542-ca11343c2c53")
+	)
+	(fp_line
+		(start 9.905 -3.365)
+		(end -9.905 -3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1f127d4b-cb75-438e-8159-d9b4089918cc")
+	)
+	(fp_line
+		(start 9.905 3.365)
+		(end 9.905 -3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e26e9e94-07e2-43a4-96af-5e77592cbca4")
+	)
+	(fp_line
+		(start -9.905 -3.365)
+		(end 9.905 -3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "652fc9f9-a62d-42aa-9155-b5f05bedb1f5")
+	)
+	(fp_line
+		(start -9.905 3.365)
+		(end -9.905 -3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dbfbfef9-1f9f-489c-9d78-443ef60eadb1")
+	)
+	(fp_line
+		(start 9.905 -3.365)
+		(end 9.905 3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d9626af-f563-4718-9b8a-31e19c831c41")
+	)
+	(fp_line
+		(start 9.905 3.365)
+		(end -9.905 3.365)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e6ce1c2f-c025-42d2-9c55-9ac75171790c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.597 0.218 0)
+		(layer "F.Fab")
+		(uuid "0ce446fa-00e9-45c5-a9ea-dbba51fbddb4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -6.735 -1.7)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9cc18e87-62d8-4e95-83cb-6536cca9264f")
+	)
+	(pad "2" thru_hole circle
+		(at 6.735 -1.7)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d521c7a5-657c-4e55-8b29-e2eef6b71430")
+	)
+	(pad "3" thru_hole circle
+		(at -6.735 1.7)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "365debda-87b3-4158-b94c-7703db99ca13")
+	)
+	(pad "4" thru_hole circle
+		(at 6.735 1.7)
+		(size 2.4 2.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "836fcdf7-7f71-467b-b541-2864ac2a4b97")
+	)
+	(model "${KIPRJMOD}/Libraries/3D/3557-2.stp"
+		(offset
+			(xyz -9.010000094 15.51 -6.320000077)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)
