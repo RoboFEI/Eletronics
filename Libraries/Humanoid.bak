@@ -25,7 +25,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "ECS120185PXGMTR"
+		(property "Footprint" "Humanoid:Crystal 12MHz - ECS"
 			(at 8.89 -96.19 0)
 			(effects
 				(font
