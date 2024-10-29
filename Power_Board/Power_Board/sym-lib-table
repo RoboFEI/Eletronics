@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Humanoid")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Humanoid.kicad_sym")(options "")(descr ""))
+)

@@ -11,3 +11,7 @@ ln -s ~/Eletronics/Libraries Libraries
 rm -rf ~/Eletronics/Power_Board/Power_Board/Libraries 
 cd ~/Eletronics/Power_Board/Power_Board/
 ln -s ~/Eletronics/Libraries Libraries
+
+rm -rf ~/Eletronics/Power_Board_For_Tests/Power_Board_For_Tests/Libraries 
+cd ~/Eletronics/Power_Board_For_Tests/Power_Board_For_Tests/
+ln -s ~/Eletronics/Libraries Libraries
