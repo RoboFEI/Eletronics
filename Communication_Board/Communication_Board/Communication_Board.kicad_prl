@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "communication_board.kicad_prl",
+    "filename": "Communication_Board.kicad_prl",
     "version": 3
   },
   "project": {

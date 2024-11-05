@@ -1,17 +1,34 @@
 sudo apt upgrade && sudo apt update -y
 
-sudo add-apt-repository ppa:kicad/kicad-8.0-releases
-sudo apt update -y
-sudo apt install kicad -y
+eletronics_folder_path=$(find ~/ -name Eletronics)
 
-rm -rf ~/Eletronics/Comm_Board/communication_board/Libraries 
-cd ~/Eletronics/Comm_Board/communication_board
-ln -s ~/Eletronics/Libraries Libraries
+# If kicad command wasn't find, install kicad
+if ! command -v "kicad" >/dev/null 2>&1; then
+  echo -e "INSTALANDO\n\n\n"
+  sudo add-apt-repository ppa:kicad/kicad-8.0-releases
+  sudo apt update -y
+  sudo apt install kicad -y
+fi
 
-rm -rf ~/Eletronics/Power_Board/Power_Board/Libraries 
-cd ~/Eletronics/Power_Board/Power_Board/
-ln -s ~/Eletronics/Libraries Libraries
+# Iterate between all files inside the "$eletronics_folder_path"
+for folder in "$eletronics_folder_path"/*; do
+  
+  # only use basename
+  #
+  # for example only store in variable the last part of path
+  # before: /home/robo/Eletronics/PowerBoard
+  # after : PowerBoard
+  folder=$(basename $folder)
 
-rm -rf ~/Eletronics/Power_Board_For_Tests/Power_Board_For_Tests/Libraries 
-cd ~/Eletronics/Power_Board_For_Tests/Power_Board_For_Tests/
-ln -s ~/Eletronics/Libraries Libraries
+  # -d flag is for verify if is a directory
+  #
+  # The processes needs to be aplied only in folders (-d "$folder") different
+  # of Libraries ("$folder" != "Libraries")
+  if [ -d "$folder" ] && [ "$folder" != "Libraries" ]; then
+    rm -rf "$eletronics_folder_path"/"$folder"/"$folder"/Libraries
+    cd "$eletronics_folder_path"/"$folder"/"$folder"
+
+    # Create a linked folder for Libraries
+    ln -s "$eletronics_folder_path"/Libraries Libraries
+  fi
+done
